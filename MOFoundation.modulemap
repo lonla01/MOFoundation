@@ -1,0 +1,11 @@
+//
+//  MOFoundation.modulemap
+//  MOFoundation
+//
+//  Created by Patrice on 09/02/2018.
+//  Copyright © 2018 Patrice. All rights reserved.
+//
+
+module MOFoundation {
+    umbrella header "MOFoundation.h"
+}

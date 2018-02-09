@@ -1,0 +1,42 @@
+//
+//  MOFoundation.h
+//  MOFoundation
+//
+//  Created by Patrice on 09/02/2018.
+//  Copyright © 2018 Patrice. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+//! Project version number for MOFoundation.
+FOUNDATION_EXPORT double MOFoundationVersionNumber;
+
+//! Project version string for MOFoundation.
+FOUNDATION_EXPORT const unsigned char MOFoundationVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <MOFoundation/PublicHeader.h>
+
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+
+#import "PSLogger.h"
+#import "PSAssert.h"
+#import "NSString_Conveniences.h"
+#import "NSObject_Conveniences.h"
+#import "NSNumber_Conveniences.h"
+#import "NSArray_Conveniences.h"
+#import "NSString_Conveniences.h"
+#import "NSManagedObjectContext+Conveniences.h"
+#import "UIView+PSExtensions.h"
+#import "UIColor+Conveniences.h"
+#import "UIImage+Conveniences.h"
+
+#endif
