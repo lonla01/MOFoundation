@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Serge P. LONLA. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 @interface PSRange : NSObject {
     @protected

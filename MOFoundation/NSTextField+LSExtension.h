@@ -9,9 +9,9 @@
 @import Foundation;
 @import UIKit;
 
-//@interface NSTextField (LSExtension)
-//
-//- (void)setAttributedStringValue:(NSAttributedString *)attrString adjustingSize:(BOOL )flag;
-//
-//@end
+@interface NSTextField (LSExtension)
+
+- (void)setAttributedStringValue:(NSAttributedString *)attrString adjustingSize:(BOOL )flag;
+
+@end
 

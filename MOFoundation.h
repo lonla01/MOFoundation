@@ -18,6 +18,7 @@
 #ifdef __OBJC__
 
 #import "PSAssert.h"
+#import "PSLogger.h"
 #import "NSString_Conveniences.h"
 #import "NSObject_Conveniences.h"
 #import "NSNumber_Conveniences.h"
@@ -27,5 +28,13 @@
 #import "UIView+PSExtensions.h"
 #import "UIColor+Conveniences.h"
 #import "UIImage+Conveniences.h"
+#import "PSRange.h"
+#import "PSVisitor.h"
+#import "PSStack.h"
+#import "LSUtil.h"
+#import "PSTokenizer.h"
+#import "PSStringToNumberTransformer.h"
+#import "NSData+PSCompression.h"
+#import "NSDate+PSExtensions.h"
 
 #endif

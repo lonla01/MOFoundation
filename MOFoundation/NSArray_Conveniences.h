@@ -5,7 +5,7 @@
 //  Created by Patrice on 06/07/10.
 //  Copyright 2010 Softisse S.A.R.L.. All rights reserved.
 //
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 NSInteger finderSortWithLocale(id string1, id string2, void *locale);
 

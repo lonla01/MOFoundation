@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Librisse. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 @interface NSData (PSCompression)
 

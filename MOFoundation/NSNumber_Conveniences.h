@@ -6,7 +6,7 @@
 //  Copyright 2010 Softisse S.A.R.L.. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 @interface NSNumber ( Conveniences ) 
 + (NSNumber *) minusOne;
