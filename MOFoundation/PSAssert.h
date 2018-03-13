@@ -5,7 +5,7 @@
 //  Created by Patrice on 19/06/10.
 //  Copyright 2010 Softisse S.A.R.L.. All rights reserved.
 //
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 extern NSString *PSAssertionException;
 extern NSString *PSAssertionGenericReason;

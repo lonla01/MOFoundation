@@ -6,7 +6,9 @@
 //  Copyright 2011 Librisse. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation.NSObject;
+@import Foundation.NSString;
+@import Foundation.NSRange;
 
 extern NSString *PSAbstractMethodInvocationException;
 

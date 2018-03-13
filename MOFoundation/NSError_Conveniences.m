@@ -6,7 +6,12 @@
 //  Copyright 2011 Librisse. All rights reserved.
 //
 
+#import <Foundation/NSException.h>
 #import "NSError_Conveniences.h"
+#import "PSLogger.h"
+#if TARGET_OS_OSX
+    #import <AppKit/NSAlert.h>
+#endif
 
 // A string constant declared in the header.
 NSString *LSErrorDomain = @"com.Librisse.ErrorDomain";
@@ -170,8 +175,9 @@ NSString *LSPosixLocalizedString( NSString *message, NSString *comment ) {
 
     + (void)checkFileOperationSuccess:(BOOL)writeSuccess error:(NSError *)error errMsg:(NSString *)errMsg {
         if ( writeSuccess == NO ) {
+            NSError *error;
             [self error:errMsg err:[NSError errorWithCode:4 error:error]];
-            NSError *error = [NSError errorWithCode:4 error:error];
+            error = [NSError errorWithCode:4 error:error];
             [error presentAlertWithCode:4];
         }
     }
@@ -196,7 +202,10 @@ NSString *LSPosixLocalizedString( NSString *message, NSString *comment ) {
         
         alert.messageText = wrapperError.localizedDescription;
         alert.informativeText = wrapperError.localizedFailureReason;
-        [alert beginSheetModalForWindow:window modalDelegate:nil didEndSelector:NULL contextInfo:NULL];
+//        [alert beginSheetModalForWindow:window modalDelegate:nil didEndSelector:NULL contextInfo:NULL];
+        [alert beginSheetModalForWindow:window completionHandler:^(NSModalResponse returnCode) {
+            ;
+        }];
         
     }
 

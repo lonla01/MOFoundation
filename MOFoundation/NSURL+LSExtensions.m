@@ -8,7 +8,11 @@
 
 #import "NSURL+LSExtensions.h"
 @import Foundation;
-@import UIKit;
+//#if TARGET_OS_IPHONE
+//@import UIKit;
+//#else
+//@import AppKit;
+//#endif
 
 @implementation NSURL (LSExtensions)
 

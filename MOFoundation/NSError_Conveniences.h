@@ -6,7 +6,15 @@
 //  Copyright 2011 Librisse. All rights reserved.
 //
 
-@import Foundation;
+@import Foundation.NSError;
+@import Foundation.NSString;
+@import Foundation.NSBundle;
+#if TARGET_OS_IPHONE
+//@import UIKit;
+#else
+@import AppKit;
+#endif
+
 
 // Librisse establishes its own error domain, and some errors in that domain.
 //extern NSString *LSErrorDomain;

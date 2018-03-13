@@ -5,7 +5,7 @@
 //  Created by Patrice on 15/06/10.
 //  Copyright 2010 Softisse S.A.R.L.. All rights reserved.
 //
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface PSLogger : NSObject {
 @private

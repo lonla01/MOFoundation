@@ -6,6 +6,13 @@
 //  Copyright 2010 Softisse S.A.R.L.. All rights reserved.
 //
 
+@import Foundation.NSString;
+@import Foundation.NSRange;
+
+#if TARGET_OS_OSX
+@import AppKit.NSAttributedString;
+#endif
+
 @interface NSString ( Conveniences ) 
 
 - (BOOL)isEmpty;

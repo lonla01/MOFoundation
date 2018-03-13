@@ -7,6 +7,10 @@
 //
 
 @import Foundation;
+#if TARGET_OS_IPHONE
+#else
+@import AppKit;
+#endif
 
 @interface NSURL (LSExtensions)
 

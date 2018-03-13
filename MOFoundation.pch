@@ -6,8 +6,6 @@
 //  Copyright © 2018 Patrice. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 //! Project version number for MOFoundation.
 FOUNDATION_EXPORT double MOFoundationVersionNumber;
 
@@ -23,8 +21,7 @@ FOUNDATION_EXPORT const unsigned char MOFoundationVersionString[];
 
 #ifdef __OBJC__
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+@import Foundation;
 #import <CoreData/CoreData.h>
 
 #import "PSLogger.h"

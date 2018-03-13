@@ -16,7 +16,6 @@
 		4E47AEF9202DAF3500513067 /* NSError_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AECF202DAF3100513067 /* NSError_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E47AEFA202DAF3500513067 /* NSString_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED0202DAF3100513067 /* NSString_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E47AEFB202DAF3500513067 /* NSDate+PSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED1202DAF3100513067 /* NSDate+PSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E47AEFC202DAF3500513067 /* LSMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED2202DAF3100513067 /* LSMenu.m */; };
 		4E47AEFD202DAF3500513067 /* NSData+PSCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED3202DAF3100513067 /* NSData+PSCompression.m */; };
 		4E47AEFE202DAF3500513067 /* NSArray_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED4202DAF3100513067 /* NSArray_Conveniences.m */; };
 		4E47AEFF202DAF3500513067 /* NSURL+LSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED5202DAF3100513067 /* NSURL+LSExtensions.m */; };
@@ -34,7 +33,6 @@
 		4E47AF0D202DAF3500513067 /* NSArray_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE3202DAF3300513067 /* NSArray_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E47AF0E202DAF3500513067 /* NSData+PSCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE4202DAF3300513067 /* NSData+PSCompression.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E47AF0F202DAF3500513067 /* PSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE5202DAF3300513067 /* PSStack.m */; };
-		4E47AF10202DAF3500513067 /* LSMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE6202DAF3300513067 /* LSMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E47AF11202DAF3500513067 /* NSManagedObjectContext+Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE7202DAF3300513067 /* NSManagedObjectContext+Conveniences.m */; };
 		4E47AF12202DAF3500513067 /* PSRomanNumberDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE8202DAF3300513067 /* PSRomanNumberDetector.m */; };
 		4E47AF13202DAF3500513067 /* PSStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE9202DAF3300513067 /* PSStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,7 +49,6 @@
 		4E47AF1E202DAF3500513067 /* NSString_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF4202DAF3500513067 /* NSString_Conveniences.m */; };
 		4E47AF1F202DAF3500513067 /* PSTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF5202DAF3500513067 /* PSTokenizer.m */; };
 		4E47AF22202DAFBB00513067 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF21202DAFBB00513067 /* CoreText.framework */; };
-		4E47AF24202DAFC700513067 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF23202DAFC700513067 /* UIKit.framework */; };
 		4E47AF26202DAFD000513067 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF25202DAFD000513067 /* QuartzCore.framework */; };
 		4E47AF28202DAFF100513067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF27202DAFF100513067 /* Foundation.framework */; };
 		4E47AF2B202DB45F00513067 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF2A202DB45F00513067 /* CoreGraphics.framework */; };
@@ -82,7 +79,6 @@
 		4E47AECF202DAF3100513067 /* NSError_Conveniences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSError_Conveniences.h; sourceTree = "<group>"; };
 		4E47AED0202DAF3100513067 /* NSString_Conveniences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_Conveniences.h; sourceTree = "<group>"; };
 		4E47AED1202DAF3100513067 /* NSDate+PSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PSExtensions.h"; sourceTree = "<group>"; };
-		4E47AED2202DAF3100513067 /* LSMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMenu.m; sourceTree = "<group>"; };
 		4E47AED3202DAF3100513067 /* NSData+PSCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PSCompression.m"; sourceTree = "<group>"; };
 		4E47AED4202DAF3100513067 /* NSArray_Conveniences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_Conveniences.m; sourceTree = "<group>"; };
 		4E47AED5202DAF3100513067 /* NSURL+LSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+LSExtensions.m"; sourceTree = "<group>"; };
@@ -100,7 +96,6 @@
 		4E47AEE3202DAF3300513067 /* NSArray_Conveniences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_Conveniences.h; sourceTree = "<group>"; };
 		4E47AEE4202DAF3300513067 /* NSData+PSCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PSCompression.h"; sourceTree = "<group>"; };
 		4E47AEE5202DAF3300513067 /* PSStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSStack.m; sourceTree = "<group>"; };
-		4E47AEE6202DAF3300513067 /* LSMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMenu.h; sourceTree = "<group>"; };
 		4E47AEE7202DAF3300513067 /* NSManagedObjectContext+Conveniences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Conveniences.m"; sourceTree = "<group>"; };
 		4E47AEE8202DAF3300513067 /* PSRomanNumberDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRomanNumberDetector.m; sourceTree = "<group>"; };
 		4E47AEE9202DAF3300513067 /* PSStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSStack.h; sourceTree = "<group>"; };
@@ -124,6 +119,7 @@
 		4E47AF2A202DB45F00513067 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4E47AF54202DE41900513067 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
 		4E47AF57202DEDD600513067 /* MOFoundation.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = MOFoundation.modulemap; sourceTree = "<group>"; };
+		4ED46F8C205783A1002CFE87 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +131,6 @@
 				4E47AF2B202DB45F00513067 /* CoreGraphics.framework in Frameworks */,
 				4E47AF28202DAFF100513067 /* Foundation.framework in Frameworks */,
 				4E47AF26202DAFD000513067 /* QuartzCore.framework in Frameworks */,
-				4E47AF24202DAFC700513067 /* UIKit.framework in Frameworks */,
 				4E47AF22202DAFBB00513067 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,8 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				4E47AEB6202DAEF100513067 /* Info.plist */,
-				4E47AEE6202DAF3300513067 /* LSMenu.h */,
-				4E47AED2202DAF3100513067 /* LSMenu.m */,
 				4E47AEDE202DAF3200513067 /* LSUtil.h */,
 				4E47AED6202DAF3100513067 /* LSUtil.m */,
 				4E47AEE3202DAF3300513067 /* NSArray_Conveniences.h */,
@@ -233,6 +226,7 @@
 		4E47AF20202DAFBB00513067 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4ED46F8C205783A1002CFE87 /* AppKit.framework */,
 				4E47AF54202DE41900513067 /* libbz2.1.0.tbd */,
 				4E47AF2A202DB45F00513067 /* CoreGraphics.framework */,
 				4E47AF27202DAFF100513067 /* Foundation.framework */,
@@ -269,7 +263,6 @@
 				4E47AEFB202DAF3500513067 /* NSDate+PSExtensions.h in Headers */,
 				4E47AF08202DAF3500513067 /* LSUtil.h in Headers */,
 				4E47AF0E202DAF3500513067 /* NSData+PSCompression.h in Headers */,
-				4E47AF10202DAF3500513067 /* LSMenu.h in Headers */,
 				4E47AF19202DAF3500513067 /* NSManagedObjectContext+Conveniences.h in Headers */,
 				4E47AF04202DAF3500513067 /* PSRomanNumberDetector.h in Headers */,
 			);
@@ -325,7 +318,7 @@
 				TargetAttributes = {
 					4E47AEB1202DAEF100513067 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					4E47AEBA202DAEF100513067 = {
 						CreatedOnToolsVersion = 9.2;
@@ -388,7 +381,6 @@
 				4E47AEFD202DAF3500513067 /* NSData+PSCompression.m in Sources */,
 				4E47AF12202DAF3500513067 /* PSRomanNumberDetector.m in Sources */,
 				4E47AF07202DAF3500513067 /* NSNumber_Conveniences.m in Sources */,
-				4E47AEFC202DAF3500513067 /* LSMenu.m in Sources */,
 				4E47AF11202DAF3500513067 /* NSManagedObjectContext+Conveniences.m in Sources */,
 				4E47AF15202DAF3500513067 /* NSObject_Conveniences.m in Sources */,
 				4E47AEFF202DAF3500513067 /* NSURL+LSExtensions.m in Sources */,
@@ -418,7 +410,9 @@
 		4E47AEC4202DAEF100513067 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -444,10 +438,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Serge Patrice LONLA (SUT9RN5VCV)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6AEUA6YWY2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -466,8 +462,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -476,7 +474,9 @@
 		4E47AEC5202DAEF100513067 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -502,10 +502,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Serge Patrice LONLA (SUT9RN5VCV)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6AEUA6YWY2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -518,8 +520,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -528,8 +532,10 @@
 		4E47AEC7202DAEF100513067 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				ADDITIONAL_SDKS = "";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Serge Patrice LONLA (SUT9RN5VCV)";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6AEUA6YWY2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -538,18 +544,24 @@
 				INFOPLIST_FILE = MOFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-v";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx10.13;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
 		4E47AEC8202DAEF100513067 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				ADDITIONAL_SDKS = "";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Serge Patrice LONLA (SUT9RN5VCV)";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6AEUA6YWY2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -558,10 +570,14 @@
 				INFOPLIST_FILE = MOFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-v";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx10.13;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Release;
 		};
@@ -570,8 +586,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AEUA6YWY2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MOFoundationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,8 +603,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AEUA6YWY2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MOFoundationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

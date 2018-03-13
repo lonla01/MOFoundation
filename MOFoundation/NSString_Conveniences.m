@@ -6,7 +6,14 @@
 //  Copyright 2010 Softisse S.A.R.L.. All rights reserved.
 //
 
+
 #import "NSNumber_Conveniences.h"
+#if TARGET_OS_OSX
+    #import <Foundation/NSUndoManager.h>
+    #import <AppKit/NSLayoutManager.h>
+    #import <AppKit/NSTextContainer.h>
+    #import <AppKit/NSAttributedString.h>
+#endif
 
 static NSUInteger HEAD_LENGTH = 20;
 static NSUInteger TAIL_LENGTH = 20;
@@ -283,7 +290,7 @@ static NSUInteger TAIL_LENGTH = 20;
     - (void)underlineWithColor:(NSColor *)color  {
         
         [self addAttribute:NSUnderlineStyleAttributeName
-                     value:@(NSSingleUnderlineStyle)
+                     value:@(NSUnderlineStyleSingle)
                      range:[self fullRange]];
         [self addAttribute:NSUnderlineColorAttributeName
                      value:color
@@ -294,7 +301,7 @@ static NSUInteger TAIL_LENGTH = 20;
     - (void )strikeOutWithColor:(NSColor *)color {
         
         [self addAttribute:NSStrikethroughStyleAttributeName
-                     value:@(NSSingleUnderlineStyle)
+                     value:@(NSUnderlineStyleSingle)
                      range:[self fullRange]];
         [self addAttribute:NSStrikethroughColorAttributeName
                      value:color

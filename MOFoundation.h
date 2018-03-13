@@ -21,13 +21,11 @@
 #import "PSLogger.h"
 #import "NSString_Conveniences.h"
 #import "NSObject_Conveniences.h"
+#import "NSError_Conveniences.h"
 #import "NSNumber_Conveniences.h"
 #import "NSArray_Conveniences.h"
 #import "NSString_Conveniences.h"
 #import "NSManagedObjectContext+Conveniences.h"
-#import "UIView+PSExtensions.h"
-#import "UIColor+Conveniences.h"
-#import "UIImage+Conveniences.h"
 #import "PSRange.h"
 #import "PSVisitor.h"
 #import "PSStack.h"
@@ -36,5 +34,12 @@
 #import "PSStringToNumberTransformer.h"
 #import "NSData+PSCompression.h"
 #import "NSDate+PSExtensions.h"
+#import "NSURL+LSExtensions.h"
 
+#endif
+
+#if TARGET_OS_IPHONE
+#import "UIView+PSExtensions.h"
+#import "UIColor+Conveniences.h"
+#import "UIImage+Conveniences.h"
 #endif

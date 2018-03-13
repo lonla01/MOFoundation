@@ -5,7 +5,11 @@
 //  Created by Patrice on 06/07/10.
 //  Copyright 2010 Softisse S.A.R.L.. All rights reserved.
 //
-#import <Foundation/Foundation.h>
+@import Foundation;
+#if TARGET_OS_IPHONE
+#else
+    @import AppKit.NSTreeNode;
+#endif
 
 NSInteger finderSortWithLocale(id string1, id string2, void *locale);
 

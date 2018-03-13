@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Librisse. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 extern NSString *PSObjectToDataTransformerName;
 extern NSString *PSHitToDataTransformerName;
