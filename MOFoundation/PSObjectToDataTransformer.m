@@ -20,17 +20,18 @@ NSString *PSHitToDataTransformerName = @"PSHitToDataTransformerName";
 
 - (id)transformedValue:(id)value {
     
-    NSString *errorStr = nil;
+    NSError *error = nil;
     id properties = value;
     NSData *data;
     
     if ( properties == nil ) return nil;
     
-    data = [NSPropertyListSerialization dataFromPropertyList:properties
-                                                      format:NSPropertyListBinaryFormat_v1_0
-                                            errorDescription:&errorStr];
-    if ( errorStr != nil ) {
-        [self errorFormat:@"Error in transformer:[%@]", errorStr];
+//    data = [NSPropertyListSerialization dataFromPropertyList:properties
+//                                                      format:NSPropertyListBinaryFormat_v1_0
+//                                            errorDescription:&errorStr];
+    data = [NSPropertyListSerialization dataWithPropertyList:properties format:NSPropertyListBinaryFormat_v1_0 options:0 error:&error];
+    if ( error != nil ) {
+        [self errorFormat:@"Error in transformer:[%@]", [error localizedDescription]];
     }
     data = [data bzipData];
         
@@ -39,19 +40,15 @@ NSString *PSHitToDataTransformerName = @"PSHitToDataTransformerName";
 
 - (id)reverseTransformedValue:(id)value {
     
-    NSString *errorStr = nil;
+    NSError *error = nil;
     NSData *data = value;
     NSObject *reverseValue = nil;
     NSPropertyListFormat format;
     
     data = [data bunzipData];
-    reverseValue = [NSPropertyListSerialization propertyListFromData:data 
-                                                    mutabilityOption:NSPropertyListMutableContainers 
-                                                              format:&format 
-                                                    errorDescription:&errorStr];
-    
-    if ( errorStr != nil ) {
-        [self errorFormat:@"Error in reverse transformer:[%@]", errorStr];
+    reverseValue = [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListMutableContainers format:&format error:&error];
+    if ( error != nil ) {
+        [self errorFormat:@"Error in reverse transformer:[%@]", [error localizedDescription]];
     }
     
 //    [self debugFormat:@"Decompressed: %@", reverseValue];
@@ -65,7 +62,7 @@ NSString *PSHitToDataTransformerName = @"PSHitToDataTransformerName";
 
 - (id)transformedValue:(id)value {
     
-    NSString *errorStr = nil;
+    NSError *error = nil;
     NSData *data;
     
     if ( value == nil ) return nil;
@@ -77,11 +74,9 @@ NSString *PSHitToDataTransformerName = @"PSHitToDataTransformerName";
             [value prepareForStorage];
         }
         
-        data = [NSPropertyListSerialization dataFromPropertyList:value
-                                                          format:NSPropertyListBinaryFormat_v1_0
-                                                errorDescription:&errorStr];
-        if ( errorStr != nil ) {
-            [self errorFormat:@"Error in transformer:[%@]", errorStr];
+        data = [NSPropertyListSerialization dataWithPropertyList:data format:NSPropertyListBinaryFormat_v1_0 options:0 error:&error];
+        if ( error != nil ) {
+            [self errorFormat:@"Error in transformer:[%@]", [error localizedDescription]];
         }
         data = [data bzipData];
         
@@ -92,7 +87,7 @@ NSString *PSHitToDataTransformerName = @"PSHitToDataTransformerName";
 
 - (id)reverseTransformedValue:(id)value {
     
-    NSString *errorStr = nil;
+    NSError *error = nil;
     NSData *data = value;
     NSObject *reverseValue = nil;
     NSPropertyListFormat format;
@@ -101,13 +96,9 @@ NSString *PSHitToDataTransformerName = @"PSHitToDataTransformerName";
     @autoreleasepool {
         
         data = [data bunzipData];
-        reverseValue = [NSPropertyListSerialization propertyListFromData:data
-                                                        mutabilityOption:NSPropertyListMutableContainers
-                                                                  format:&format
-                                                        errorDescription:&errorStr];
-        
-        if ( errorStr != nil ) {
-            [self errorFormat:@"Error in reverse transformer:[%@]", errorStr];
+        reverseValue = [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListMutableContainers format:&format error:&error];
+        if ( error != nil ) {
+            [self errorFormat:@"Error in reverse transformer:[%@]", [error localizedDescription]];
         }
         
         if ( ! [reverseValue isKindOfClass:[NSArray class]] ) {

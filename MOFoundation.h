@@ -23,7 +23,7 @@
 #import "NSObject_Conveniences.h"
 #import "NSError_Conveniences.h"
 #import "NSNumber_Conveniences.h"
-@import MOFoundation.NSArray_Conveniences;
+#import "NSArray_Conveniences.h"
 #import "NSString_Conveniences.h"
 #import "NSManagedObjectContext+Conveniences.h"
 #import "PSRange.h"
@@ -36,6 +36,7 @@
 #import "NSDate+PSExtensions.h"
 #import "NSURL+LSExtensions.h"
 #import "PSRomanNumberDetector.h"
+#import "NSDateFormatter+LSExtensions.h"
 
 #endif
 
