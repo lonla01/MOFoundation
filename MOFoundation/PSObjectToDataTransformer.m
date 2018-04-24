@@ -74,7 +74,7 @@ NSString *PSHitToDataTransformerName = @"PSHitToDataTransformerName";
             [value prepareForStorage];
         }
         
-        data = [NSPropertyListSerialization dataWithPropertyList:data format:NSPropertyListBinaryFormat_v1_0 options:0 error:&error];
+        data = [NSPropertyListSerialization dataWithPropertyList:value format:NSPropertyListBinaryFormat_v1_0 options:0 error:&error];
         if ( error != nil ) {
             [self errorFormat:@"Error in transformer:[%@]", [error localizedDescription]];
         }
