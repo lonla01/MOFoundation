@@ -270,6 +270,7 @@ static NSUInteger TAIL_LENGTH = 20;
         // Figure out how big this graphic would have to be to show all of its contents. -glyphRangeForTextContainer: forces layout.
         NSLayoutManager *layoutManager = [[self class] sharedLayoutManager];
         NSTextContainer *textContainer = [[layoutManager textContainers] objectAtIndex:0];
+        
         [textContainer setContainerSize:NSMakeSize(1.0e7f, 1.0e7f)];
         NSTextStorage *contents = [[NSTextStorage alloc] initWithAttributedString:self];
         [contents addLayoutManager:layoutManager];
