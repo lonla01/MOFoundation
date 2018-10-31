@@ -42,6 +42,4 @@
 
 #if TARGET_OS_IPHONE
 #import "UIView+PSExtensions.h"
-#import "UIColor+Conveniences.h"
-#import "UIImage+Conveniences.h"
 #endif

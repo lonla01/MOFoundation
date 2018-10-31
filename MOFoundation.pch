@@ -32,8 +32,6 @@ FOUNDATION_EXPORT const unsigned char MOFoundationVersionString[];
 #import "NSArray_Conveniences.h"
 #import "NSString_Conveniences.h"
 #import "NSManagedObjectContext+Conveniences.h"
-#import "UIView+PSExtensions.h"
-#import "UIColor+Conveniences.h"
-#import "UIImage+Conveniences.h"
+
 
 #endif

@@ -8,4 +8,6 @@
 
 module MOFoundation {
     umbrella header "MOFoundation.h"
+    export *
+    module * { export * }
 }
