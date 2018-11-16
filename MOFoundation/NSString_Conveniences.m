@@ -8,6 +8,7 @@
 
 
 #import "NSNumber_Conveniences.h"
+#import "PSLogger.h"
 #if TARGET_OS_OSX
     #import <Foundation/NSUndoManager.h>
     #import <AppKit/NSLayoutManager.h>
@@ -244,6 +245,21 @@ static NSUInteger TAIL_LENGTH = 20;
 
 - (NSRange )fullRange {
     return NSMakeRange( 0, [self length] );
+}
+
+- (NSAttributedString *)_attributedSubstringFromRange:(NSRange )range {
+
+    NSAttributedString *substring = nil;
+    
+        @try {
+            substring = [self attributedSubstringFromRange:range];
+        }
+        @catch (NSException *exception) {
+            [self debugFormat:@"[Range Exception:[%d, %d]", range.location, range.length];
+            substring = nil;
+        }
+    
+        return substring;
 }
 
 #if TARGET_OS_OSX

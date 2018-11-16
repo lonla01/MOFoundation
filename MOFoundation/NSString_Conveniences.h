@@ -44,6 +44,8 @@
 @interface NSAttributedString ( Conveniences )
 
 - (NSRange )fullRange;
+- (NSAttributedString *)_attributedSubstringFromRange:(NSRange )range;
+
 #if TARGET_OS_OSX
     - (NSSize)naturalSize;
 #endif
