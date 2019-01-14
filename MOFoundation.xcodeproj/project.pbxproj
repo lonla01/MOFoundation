@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E3CDF5C21877A4E001905C2 /* UIView+PSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CDF5221877A4C001905C2 /* UIView+PSExtensions.m */; };
-		4E3CDF5E21877A4E001905C2 /* UIView+PSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E3CDF5421877A4D001905C2 /* UIView+PSExtensions.h */; };
 		4E47AEBC202DAEF100513067 /* MOFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AEB2202DAEF100513067 /* MOFoundation.framework */; };
 		4E47AEC1202DAEF100513067 /* MOFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEC0202DAEF100513067 /* MOFoundationTests.m */; };
 		4E47AEC3202DAEF100513067 /* MOFoundation.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEB5202DAEF100513067 /* MOFoundation.pch */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,8 +67,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E3CDF5221877A4C001905C2 /* UIView+PSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PSExtensions.m"; sourceTree = "<group>"; };
-		4E3CDF5421877A4D001905C2 /* UIView+PSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PSExtensions.h"; sourceTree = "<group>"; };
 		4E47AEB2202DAEF100513067 /* MOFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E47AEB5202DAEF100513067 /* MOFoundation.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOFoundation.pch; sourceTree = "<group>"; };
 		4E47AEB6202DAEF100513067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,8 +210,6 @@
 				4E47AEF5202DAF3500513067 /* PSTokenizer.m */,
 				4E47AEED202DAF3400513067 /* PSVisitor.h */,
 				4E47AED7202DAF3100513067 /* PSVisitor.m */,
-				4E3CDF5421877A4D001905C2 /* UIView+PSExtensions.h */,
-				4E3CDF5221877A4C001905C2 /* UIView+PSExtensions.m */,
 			);
 			path = MOFoundation;
 			sourceTree = "<group>";
@@ -252,7 +246,6 @@
 			files = (
 				4E47AF56202DE85300513067 /* MOFoundation.h in Headers */,
 				4E47AEFA202DAF3500513067 /* NSString_Conveniences.h in Headers */,
-				4E3CDF5E21877A4E001905C2 /* UIView+PSExtensions.h in Headers */,
 				4E47AF0D202DAF3500513067 /* NSArray_Conveniences.h in Headers */,
 				4E47AEF8202DAF3500513067 /* NSNumber_Conveniences.h in Headers */,
 				4E47AF09202DAF3500513067 /* PSLogger.h in Headers */,
@@ -282,9 +275,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E47AEC6202DAEF100513067 /* Build configuration list for PBXNativeTarget "MOFoundation" */;
 			buildPhases = (
+				4E47AEAF202DAEF100513067 /* Headers */,
 				4E47AEAD202DAEF100513067 /* Sources */,
 				4E47AEAE202DAEF100513067 /* Frameworks */,
-				4E47AEAF202DAEF100513067 /* Headers */,
 				4E47AEB0202DAEF100513067 /* Resources */,
 			);
 			buildRules = (
@@ -391,7 +384,6 @@
 				4E47AF11202DAF3500513067 /* NSManagedObjectContext+Conveniences.m in Sources */,
 				4E47AF15202DAF3500513067 /* NSObject_Conveniences.m in Sources */,
 				4E47AEFF202DAF3500513067 /* NSURL+LSExtensions.m in Sources */,
-				4E3CDF5C21877A4E001905C2 /* UIView+PSExtensions.m in Sources */,
 				4E47AF1D202DAF3500513067 /* PSLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ADDITIONAL_SDKS = "";
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Serge Patrice LONLA (SUT9RN5VCV)";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -556,15 +548,16 @@
 				INFOPLIST_FILE = MOFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = MOFoundation.modulemap;
 				OTHER_LDFLAGS = "-v";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx10.13;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USE_HEADERMAP = NO;
+				USE_HEADERMAP = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Debug;
@@ -573,7 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ADDITIONAL_SDKS = "";
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Serge Patrice LONLA (SUT9RN5VCV)";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -588,15 +581,16 @@
 				INFOPLIST_FILE = MOFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = MOFoundation.modulemap;
 				OTHER_LDFLAGS = "-v";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx10.13;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USE_HEADERMAP = NO;
+				USE_HEADERMAP = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Release;
