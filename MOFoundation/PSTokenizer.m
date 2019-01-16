@@ -7,6 +7,7 @@
 //
                                                                                                                                                                                                                                                                                                                                                         
 #import "PSTokenizer.h"
+#import <MOFoundation/NSString_Conveniences.h>
 
 @implementation PSTokenizer
 
@@ -18,8 +19,8 @@
     
     if (( self = [super init] )) {
         NSCharacterSet *charSet = [NSCharacterSet characterSetWithCharactersInString:separators];
-        //self.components = [string componentsSeparatedByCharactersInSet:charSet include:YES];
-        self.components = [string componentsSeparatedByCharactersInSet:charSet];
+        self.components = [string componentsSeparatedByCharactersInSet:charSet include:YES];
+//        self.components = [string componentsSeparatedByCharactersInSet:charSet];
         self.separators = separators;
     }
     

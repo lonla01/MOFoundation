@@ -145,7 +145,7 @@ static PSAssert *_Asserter = nil;
     [self log:[NSString stringWithFormat:@"%@ %@", [self className], msg]];
     [[self asserter] assertVal:[obtained count] isEq:[model count] msg:[NSString stringWithFormat:@"%@ Testing array size: ", msg]];
     for ( NSUInteger i = 0; i < [obtained count] ; i++ ) {
-        id mod =model[i];
+        id mod = model[i];
         id obj = obtained[i];
         [self assertObj:obj isEq:mod msg:msg];
     }
