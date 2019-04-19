@@ -20,8 +20,8 @@ extern NSString *PSAssertionGenericReason;
 - (void)assertFalse:(BOOL)condition;
 - (void)assertTrue:(BOOL)condition msg:(NSString *)msg;
 - (void)assertFalse:(BOOL)condition msg:(NSString *)msg;
-- (void)assertObject:(id)object isEqual:(id)model msg:(NSString *)msg;
-- (void)assertObject:(id)object notEqual:(id)model msg:(NSString *)msg;
+- (void)assertObject:(id)object isEqualTo:(id)model msg:(NSString *)msg;
+- (void)assertObject:(id)object notEqualTo:(id)model msg:(NSString *)msg;
 
 @end
 
@@ -30,8 +30,8 @@ extern NSString *PSAssertionGenericReason;
 - (PSAssert *)asserter;
 - (void) assertTrue:(BOOL)condition msg:(NSString *)msg;
 - (void)assertFalse:(BOOL)condition msg:(NSString *)msg;
-- (void)assertObject:(id)object isEqual:(id)model msg:(NSString *)msg;
-- (void)assertObject:(id)object notEqual:(id)model msg:(NSString *)msg;
+- (void)assertObject:(id)object isEqualTo:(id)model msg:(NSString *)msg;
+- (void)assertObject:(id)object notEqualTo:(id)model msg:(NSString *)msg;
 - (void) assertTr:(BOOL)testValue msg:(NSString *)msg;
 - (void) assertTr:(BOOL)testValue msgFormat:(NSString *)format, ...;
 - (void)assertVal:(NSUInteger)obtainedVal  isEq:(NSUInteger)correctVal msg:(NSString *)msg;

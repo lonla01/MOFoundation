@@ -42,7 +42,7 @@ static PSAssert *_Asserter = nil;
     [self assertTrue:( ! condition ) msg:msg];
 }
 
-- (void)assertObject:(id)object isEqual:(id)model msg:(NSString *)msg {
+- (void)assertObject:(id)object isEqualTo:(id)model msg:(NSString *)msg {
     if ( object == nil && model == nil ) {
         return;       // Assertion OK.
     } else if ( object == nil || model == nil )
@@ -51,7 +51,7 @@ static PSAssert *_Asserter = nil;
         [self assertTrue:[object isEqual:model] msg:msg];
 }
 
-- (void)assertObject:(id)object notEqual:(id)model msg:(NSString *)msg {
+- (void)assertObject:(id)object notEqualTo:(id)model msg:(NSString *)msg {
     if ( object == nil && model == nil ) {
         [self assertTrue:NO msg:msg]; //Assertion NOK.
     } else if ( object == nil || model == nil )
@@ -88,11 +88,11 @@ static PSAssert *_Asserter = nil;
     [[self asserter] assertFalse:condition msg:msg];
 }
 
-- (void)assertObject:(id)object isEqual:(id)model msg:(NSString *)msg {
-    [[self asserter] assertObject:object isEqual:model msg:msg];
+- (void)assertObject:(id)object isEqualTo:(id)model msg:(NSString *)msg {
+    [[self asserter] assertObject:object isEqualTo:model msg:msg];
 }
-- (void)assertObject:(id)object notEqual:(id)model msg:(NSString *)msg {
-     [[self asserter] assertObject:object notEqual:model msg:msg];
+- (void)assertObject:(id)object notEqualTo:(id)model msg:(NSString *)msg {
+     [[self asserter] assertObject:object notEqualTo:model msg:msg];
 }
 
 - (void) assertTr:(BOOL)testValue msg:(NSString *)msg {
@@ -135,7 +135,7 @@ static PSAssert *_Asserter = nil;
     if ( [model isKindOfClass:[NSDictionary class]] || [object isKindOfClass:[NSDictionary class]] ) {
         [[self asserter] assertDict:(NSDictionary *)object isEq:(NSDictionary *)model msg:msg];
     } else {        
-        [self assertObject:object isEqual:model msg:[NSString stringWithFormat:@"%@: [%@] != [%@]", msg, model, object]];
+        [self assertObject:object isEqualTo:model msg:[NSString stringWithFormat:@"%@: [%@] != [%@]", msg, model, object]];
         [self trace:[NSString stringWithFormat:@"%@: [%@] = [%@]", msg, model, object]];
     }
 }
