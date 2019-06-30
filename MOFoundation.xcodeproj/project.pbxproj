@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E3DA4A322C8DBEA00F4ABBE /* PSFontCreationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DA4A222C8DBEA00F4ABBE /* PSFontCreationTestCase.m */; };
 		4E47AEBC202DAEF100513067 /* MOFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AEB2202DAEF100513067 /* MOFoundation.framework */; };
 		4E47AEC1202DAEF100513067 /* MOFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEC0202DAEF100513067 /* MOFoundationTests.m */; };
 		4E47AEC3202DAEF100513067 /* MOFoundation.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEB5202DAEF100513067 /* MOFoundation.pch */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E3DA4A222C8DBEA00F4ABBE /* PSFontCreationTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSFontCreationTestCase.m; sourceTree = "<group>"; };
 		4E47AEB2202DAEF100513067 /* MOFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E47AEB5202DAEF100513067 /* MOFoundation.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOFoundation.pch; sourceTree = "<group>"; };
 		4E47AEB6202DAEF100513067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		4E47AEBF202DAEF100513067 /* MOFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				4E3DA4A222C8DBEA00F4ABBE /* PSFontCreationTestCase.m */,
 				4E47AEC0202DAEF100513067 /* MOFoundationTests.m */,
 				4E47AEC2202DAEF100513067 /* Info.plist */,
 			);
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E3DA4A322C8DBEA00F4ABBE /* PSFontCreationTestCase.m in Sources */,
 				4E47AEC1202DAEF100513067 /* MOFoundationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
