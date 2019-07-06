@@ -68,11 +68,11 @@ static PSAssert *_Asserter = nil;
     return [PSAssert singleton]; 
 }
 
-- (void) assertTrue:(BOOL)condition msg:(NSString *)msg {
+- (void)assertTrue:(BOOL)condition msg:(NSString *)msg {
     [[self asserter] assertTrue:condition msg:msg];
 }
 
-- (void) assertTrue:(BOOL)condition args:(va_list )argList msgFormat:(NSString *)format, ... {
+- (void)assertTrue:(BOOL)condition args:(va_list )argList msgFormat:(NSString *)format, ... {
     
     NSString *message;
     
@@ -95,12 +95,12 @@ static PSAssert *_Asserter = nil;
      [[self asserter] assertObject:object notEqualTo:model msg:msg];
 }
 
-- (void) assertTr:(BOOL)testValue msg:(NSString *)msg {
+- (void)assertTr:(BOOL)testValue msg:(NSString *)msg {
     [[self asserter] assertTrue:testValue msg:[NSString stringWithFormat:@"%@: %d != %d", msg, testValue, YES]];
     [self trace:[NSString stringWithFormat:@"%@...OK", msg]];
 }
 
-- (void) assertTr:(BOOL)testValue msgFormat:(NSString *)format, ... {
+- (void)assertTr:(BOOL)testValue msgFormat:(NSString *)format, ... {
     
     va_list argumentsList;
     
@@ -113,7 +113,7 @@ static PSAssert *_Asserter = nil;
 }
 
 
-- (void) errorFormat:(NSString *)format, ... {
+- (void)errorFormat:(NSString *)format, ... {
     
     va_list argumentsList;
     
@@ -124,7 +124,6 @@ static PSAssert *_Asserter = nil;
     }
     
 }
-
 
 - (void)assertVal:(NSUInteger )obtainedVal isEq:(NSUInteger )correctVal msg:(NSString *)msg {
     [[self asserter] assertTrue:( correctVal == obtainedVal ) msg:[NSString stringWithFormat:@"%@: %ld != %ld", msg, (long)correctVal, (long)obtainedVal]];
