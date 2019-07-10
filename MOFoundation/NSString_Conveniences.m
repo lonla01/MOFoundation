@@ -207,6 +207,14 @@ static NSUInteger TAIL_LENGTH = 20;
                            
 }
 
+- (NSString *)cleanFromOptional {
+    NSMutableString *buffer = [[NSMutableString alloc] initWithString:self];
+    // We clean the raw string from extra characters added by the optional system.
+    [buffer replaceOccurrencesOfString:@"Optional(\"" withString:@"" options:0 range:[buffer fullRange]];
+    [buffer replaceOccurrencesOfString:@"\")" withString:@"" options:0 range:[buffer fullRange]];
+    return buffer;
+}
+
 #pragma mark - NSAttributedString Compatibility
 
 - (NSString *)string {

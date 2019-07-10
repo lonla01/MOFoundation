@@ -39,6 +39,8 @@
 - (BOOL)isCaseInsensitiveEqual:(NSString *)aString;
 - (NSComparisonResult)localizedCaseInsensitiveNumericCompare:(NSString *)aStr;
 
+- (NSString *)cleanFromOptional;
+
 @end
 
 @interface NSAttributedString ( Conveniences )
