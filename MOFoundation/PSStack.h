@@ -18,11 +18,13 @@
 
 - (id)initWithPersistenceURL:(NSURL *)anURL;
 - (id)initWithCapacity:(NSUInteger )capacity;
+- (id)initWithArray:(NSArray *)anArray;
 
 #pragma mark - Accessing
 
-- (void)push:(id)anObject;
-- (id)pop;
+- (void )push:(id)anObject;
+- (id )pop;
+- (id )peek;
 
 #pragma mark - Filtering
 

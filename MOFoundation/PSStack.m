@@ -7,7 +7,7 @@
 //
 
 #import "PSStack.h"
-
+#import "NSArray_Conveniences.h"
 
 @implementation PSStack {
     NSMutableArray *_storage;
@@ -63,6 +63,12 @@
     
     return anObject;
     
+}
+
+- (id )peek {
+    // Says if there something left to pop in the stack and returns it
+    id result = ([_storage isEmpty]) ? nil : [_storage lastObject];
+    return result;
 }
 
 - (void)clearStorage {
