@@ -291,6 +291,7 @@ static PSLogger *_SharedLogger = nil;
 
 @end
 
+#pragma mark  -
 @implementation NSObject (ParolisseConveniences)
 
 - (NSString *)className {

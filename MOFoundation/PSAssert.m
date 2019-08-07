@@ -33,8 +33,9 @@ static PSAssert *_Asserter = nil;
 
 - (void)assertTrue:(BOOL)condition msg:(NSString *)msg {
     if (condition != YES) {
-        NSString *reason = (msg == nil) ? PSAssertionGenericReason : msg;
-        @throw [NSException exceptionWithName:PSAssertionException reason:reason userInfo:nil];
+//        NSString *reason = (msg == nil) ? PSAssertionGenericReason : msg;
+//        [self debug:msg];
+//        @throw [NSException exceptionWithName:PSAssertionException reason:reason userInfo:nil];
     }
 }
 

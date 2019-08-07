@@ -227,6 +227,21 @@ NSComparisonResult finderSortWithLocale(id string1, id string2, void *locale) {
     
 }
 
+- (NSNumber *)sumOfObjects {
+    
+    __block NSInteger sum = 0;
+    
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSNumber *number = (NSNumber *)obj;
+        if ( obj != self ) {
+            sum += [number integerValue];
+        }
+    }];
+    
+    return @(sum);
+    
+}
+
 @end
 
 #pragma mark -

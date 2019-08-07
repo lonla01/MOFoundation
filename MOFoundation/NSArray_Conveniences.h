@@ -36,6 +36,7 @@ NSInteger finderSortWithLocale(id string1, id string2, void *locale);
 #endif
 
 - (NSArray *)arrayByRemovingObject:(id)anObject;
+- (NSNumber *)sumOfObjects;
 
 @end
 

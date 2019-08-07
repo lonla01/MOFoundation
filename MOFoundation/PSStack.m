@@ -9,6 +9,9 @@
 #import "PSStack.h"
 #import "NSArray_Conveniences.h"
 
+/**
+ * This seam to be a LIFO stack
+ */
 @implementation PSStack {
     NSMutableArray *_storage;
 }
