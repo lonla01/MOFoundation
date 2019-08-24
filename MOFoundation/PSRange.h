@@ -19,6 +19,7 @@
 
 @property (nonatomic, readonly) NSUInteger intStart;
 @property (nonatomic, readonly) NSUInteger intEnd;
+@property (nonatomic, readonly) NSUInteger length;
 
 @property (weak, nonatomic, readonly) NSNumber *numberStart;
 @property (weak, nonatomic, readonly) NSNumber *numberEnd;
@@ -29,3 +30,7 @@
 + (PSRange *)rangeWithStart:(id)start end:(id)end;
 
 @end
+
+NS_INLINE BOOL PSLocationInRange(NSUInteger loc, NSRange range) {
+    return (!(loc < range.location) && (loc - range.location) <= range.length) ? YES : NO;
+}

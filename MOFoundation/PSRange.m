@@ -44,6 +44,10 @@
     return (NSNumber *)self.end;
 }
 
+- (NSUInteger )length {
+    return self.intEnd - self.intStart;
+}
+
 - (void)ensureIntegrity {
     
     if ( ! [_start respondsToSelector:@selector(compare:)] ) {
