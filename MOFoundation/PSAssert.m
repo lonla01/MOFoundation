@@ -136,7 +136,8 @@ static PSAssert *_Asserter = nil;
         [[self asserter] assertDict:(NSDictionary *)object isEq:(NSDictionary *)model msg:msg];
     } else {        
         [self assertObject:object isEqualTo:model msg:[NSString stringWithFormat:@"%@: [%@] != [%@]", msg, model, object]];
-        [self trace:[NSString stringWithFormat:@"%@: [%@] = [%@]", msg, model, object]];
+        NSString *sign = [object isEqual:model] ? @"=" : @"!=";
+        [self trace:[NSString stringWithFormat:@"%@: [%@] %@ [%@]", msg, model, sign, object]];
     }
 }
 
