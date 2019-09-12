@@ -48,8 +48,9 @@ static PSAssert *_Asserter = nil;
         return;       // Assertion OK.
     } else if ( object == nil || model == nil )
          [self assertTrue:NO msg:msg]; //Assertion NOK.
-    else
+    else {
         [self assertTrue:[object isEqual:model] msg:msg];
+    }
 }
 
 - (void)assertObject:(id)object notEqualTo:(id)model msg:(NSString *)msg {
