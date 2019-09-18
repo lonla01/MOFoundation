@@ -18,21 +18,26 @@
 
 - (NSURL *)URLByReplacingExtensionBy:(NSString *)ext;
 
-//+ (BOOL)canReadURLFromPasteboard:(NSPasteboard *)pboard;
-//
-//+ (NSArray *)readURLsFromPasteboard:(NSPasteboard *)pboard ;
-//
-//+ (BOOL)canReadFileURLFromPasteboard:(NSPasteboard *)pboard;
+#if TARGET_OS_IPHONE
+#else
++ (BOOL)canReadURLFromPasteboard:(NSPasteboard *)pboard;
 
-//- (NSString *)urlUTIType;
-//
-//- (BOOL)isImageURL;
-//
-//- (BOOL)isFolderURL;
-//
-//- (BOOL )zipFile;
-//- (NSURL *)zippedURL;
-//
-//- (BOOL )unzipFile;
++ (NSArray *)readURLsFromPasteboard:(NSPasteboard *)pboard ;
+
++ (BOOL)canReadFileURLFromPasteboard:(NSPasteboard *)pboard;
+
+- (BOOL)isImageURL;
+
+- (BOOL)isFolderURL;
+
+- (BOOL )zipFile;
+
+- (NSURL *)zippedURL;
+
+- (BOOL )unzipFile;
+
+#endif
+
+- (NSString *)urlUTIType;
 
 @end

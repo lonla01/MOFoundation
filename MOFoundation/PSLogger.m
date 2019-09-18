@@ -57,6 +57,10 @@ static PSLogger *_SharedLogger = nil;
             self.mute, self.debug, self.trace, self.verbose, self.stackPrint];
 }
 
+- (void)setMute:(BOOL)mute {
+    _mute = mute;
+}
+
 #pragma mark -
 #pragma mark L O G G I N G
 

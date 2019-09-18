@@ -49,7 +49,9 @@ NSInteger finderSortWithLocale(id string1, id string2, void *locale);
 - (NSSet *)collectUsingSelector:(SEL)selector withObject:(id)arg;
 - (NSSet *)collectUsingSelector:(SEL)selector withTarget:(id)target;
 // We create a tree of NSTreeNodes out of a flat list objects and return the root of that tree
-//- (NSTreeNode *)rootTreeNodeIndexedByKey:(NSString *)aKey;
+#if TARGET_OS_OSX
+- (NSTreeNode *)rootTreeNodeIndexedByKey:(NSString *)aKey;
+#endif
 // Do you see this ?
 
 @end
