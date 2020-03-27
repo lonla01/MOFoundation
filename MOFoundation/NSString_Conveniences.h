@@ -40,6 +40,8 @@
 - (NSComparisonResult)localizedCaseInsensitiveNumericCompare:(NSString *)aStr;
 
 - (NSString *)cleanFromOptional;
+- (NSString *)wordAtCharacterIndex:(NSInteger )index;
+- (NSRange )rangeOfWordAtCharacterIndex:(NSInteger )index;
 
 @end
 

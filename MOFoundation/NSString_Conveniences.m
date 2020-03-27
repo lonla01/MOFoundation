@@ -215,6 +215,34 @@ static NSUInteger TAIL_LENGTH = 20;
     return buffer;
 }
 
+    
+- (NSString *)wordAtCharacterIndex:(NSInteger )index {
+    __block NSString *result = nil;
+    [self enumerateSubstringsInRange:NSMakeRange(0, self.length)
+                             options:NSStringEnumerationByWords
+                          usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+                              if (NSLocationInRange(index, enclosingRange)) {
+                                  result = substring;
+                                  *stop = YES;
+                              }
+                          }];
+    return result;
+}
+
+- (NSRange )rangeOfWordAtCharacterIndex:(NSInteger )index {
+    __block NSRange result = NSMakeRange( NSNotFound, 0);
+    [self enumerateSubstringsInRange:NSMakeRange(0, self.length)
+                             options:NSStringEnumerationByWords
+                          usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+                              if (NSLocationInRange(index, enclosingRange)) {
+                                  result = enclosingRange;
+                                  *stop = YES;
+                              }
+                          }];
+    return result;
+}
+
+
 #pragma mark - NSAttributedString Compatibility
 
 - (NSString *)string {
