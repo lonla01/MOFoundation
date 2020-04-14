@@ -11,5 +11,6 @@
 @interface NSManagedObjectContext (Conveniences)
 
 - (void)saveChanges;
+- (NSManagedObject *)objectFromUniqueIdentifier:(NSString *)uniqueId;
 
 @end

@@ -34,5 +34,26 @@
 //                 (long)insertCount, (long)deleteCount, (long)updatedCount]];
 }
 
+- (NSManagedObject *)objectFromUniqueIdentifier:(NSString *)uniqueId {
+    
+    NSURL *objectURL;
+    NSString *objectURI;
+    NSManagedObject *aManagedObject;
+    NSManagedObjectID *objectID;
+    
+    @try {
+        objectURI = uniqueId;
+        objectURL = [NSURL URLWithString:objectURI];
+        objectID = [[self persistentStoreCoordinator] managedObjectIDForURIRepresentation:objectURL];
+        aManagedObject = [self objectWithID:objectID];
+    }
+    @catch (id exception) {
+        aManagedObject = nil;
+        [self errorFormat:@"Unable to resolve URI: %@", objectURL];
+        return nil;
+    }
+    
+    return aManagedObject;
+}
 
 @end
