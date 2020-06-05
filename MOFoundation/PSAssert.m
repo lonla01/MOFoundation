@@ -115,17 +115,17 @@ static PSAssert *_Asserter = nil;
 }
 
 
-- (void)errorFormat:(NSString *)format, ... {
-    
-    va_list argumentsList;
-    
-    if ( format ) {
-        va_start( argumentsList, format );
-        [[PSLogger sharedLogger] errorFormat:format args:argumentsList sender:self];
-        va_end( argumentsList );
-    }
-    
-}
+//- (void)errorFormat:(NSString *)format, ... {
+//    
+//    va_list argumentsList;
+//    
+//    if ( format ) {
+//        va_start( argumentsList, format );
+//        [[PSLogger sharedLogger] errorFormat:format args:argumentsList sender:self];
+//        va_end( argumentsList );
+//    }
+//    
+//}
 
 - (void)assertVal:(NSUInteger )obtainedVal isEq:(NSUInteger )correctVal msg:(NSString *)msg {
     [[self asserter] assertTrue:( correctVal == obtainedVal ) msg:[NSString stringWithFormat:@"%@: %ld != %ld", msg, (long)correctVal, (long)obtainedVal]];

@@ -40,6 +40,3 @@
 
 #endif
 
-#if TARGET_OS_IPHONE
-#import "UIView+PSExtensions.h"
-#endif
