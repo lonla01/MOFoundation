@@ -69,7 +69,7 @@
 }
 
 - (id )peek {
-    // Says if there something left to pop in the stack and returns it
+    // Says if there is something left to pop in the stack and returns it
     id result = ([_storage isEmpty]) ? nil : [_storage lastObject];
     return result;
 }
