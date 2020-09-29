@@ -53,7 +53,11 @@
 }
 
 - (void)push:(id)anObject {
-    [_storage addObject:anObject];
+    // Added the test in order to prevent duplicates.
+    // TODO: Not yet tested for legacy code.
+    if ( ! [_storage containsObject:anObject] ) {
+        [_storage addObject:anObject];
+    }
 }
 
 - (id)pop {
