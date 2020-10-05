@@ -42,12 +42,15 @@
 - (NSString *)cleanFromOptional;
 - (NSString *)wordAtCharacterIndex:(NSInteger )index;
 - (NSRange )rangeOfWordAtCharacterIndex:(NSInteger )index;
+- (NSString *)naveKeyForLinkDestination;
+- (NSString *)strongKeyForLinkDestination;
 
 @end
 
 @interface NSAttributedString ( Conveniences )
 
 - (NSRange )fullRange;
+- (BOOL)isEmpty;
 - (NSAttributedString *)_attributedSubstringFromRange:(NSRange )range;
 
 #if TARGET_OS_OSX
