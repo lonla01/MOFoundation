@@ -7,6 +7,7 @@
 //
 
 #import "PSStack.h"
+#import "PSLogger.h"
 #import "NSArray_Conveniences.h"
 
 /**
@@ -116,7 +117,9 @@
 }
 
 - (void)writeToURL:(NSURL *)anURL {
-    [_storage writeToURL:anURL atomically:YES];
+    if ( ! [_storage writeToURL:anURL atomically:YES] ) {
+        [[PSLogger sharedLogger] debugFormat:@"Couldn't persist stack into url: %@", anURL];
+    }
 }
 
 @end
