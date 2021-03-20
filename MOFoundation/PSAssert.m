@@ -140,6 +140,7 @@ static PSAssert *_Asserter = nil;
         NSString *sign = [object isEqual:model] ? @"=" : @"!=";
         [self trace:[NSString stringWithFormat:@"%@: [%@] %@ [%@]", msg, model, sign, object]];
     }
+     [self debug:@"...OK\n"];
 }
 
 - (void)assertArray:(NSArray *)obtained isEq:(NSArray *)model msg:(NSString *)msg {
