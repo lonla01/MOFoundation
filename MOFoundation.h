@@ -17,26 +17,26 @@
 
 #ifdef __OBJC__
 
-#import "PSAssert.h"
-#import "PSLogger.h"
-#import "NSString_Conveniences.h"
-#import "NSObject_Conveniences.h"
-#import "NSError_Conveniences.h"
-#import "NSNumber_Conveniences.h"
-#import "NSArray_Conveniences.h"
-#import "NSString_Conveniences.h"
-#import "NSManagedObjectContext+Conveniences.h"
-#import "PSRange.h"
-#import "PSVisitor.h"
-#import "PSStack.h"
-#import "LSUtil.h"
-#import "PSTokenizer.h"
-#import "PSStringToNumberTransformer.h"
-#import "NSData+PSCompression.h"
-#import "NSDate+PSExtensions.h"
-#import "NSURL+LSExtensions.h"
-#import "PSRomanNumberDetector.h"
-#import "NSDateFormatter+LSExtensions.h"
+#import <MOFoundation/PSAssert.h>
+#import <MOFoundation/PSLogger.h>
+#import <MOFoundation/NSString_Conveniences.h>
+#import <MOFoundation/NSObject_Conveniences.h>
+#import <MOFoundation/NSError_Conveniences.h>
+#import <MOFoundation/NSNumber_Conveniences.h>
+#import <MOFoundation/NSArray_Conveniences.h>
+#import <MOFoundation/NSString_Conveniences.h>
+#import <MOFoundation/NSManagedObjectContext+Conveniences.h>
+#import <MOFoundation/PSRange.h>
+#import <MOFoundation/PSVisitor.h>
+#import <MOFoundation/PSStack.h>
+#import <MOFoundation/LSUtil.h>
+#import <MOFoundation/PSTokenizer.h>
+#import <MOFoundation/PSStringToNumberTransformer.h>
+#import <MOFoundation/NSData+PSCompression.h>
+#import <MOFoundation/NSDate+PSExtensions.h>
+#import <MOFoundation/NSURL+LSExtensions.h>
+#import <MOFoundation/PSRomanNumberDetector.h>
+#import <MOFoundation/NSDateFormatter+LSExtensions.h>
 
 #endif
 
