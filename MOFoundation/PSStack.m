@@ -7,6 +7,7 @@
 //
 
 #import "PSStack.h"
+#import "PSLogger.h"
 #import "NSArray_Conveniences.h"
 
 /**
@@ -53,7 +54,11 @@
 }
 
 - (void)push:(id)anObject {
-    [_storage addObject:anObject];
+    // Added the test in order to prevent duplicates.
+    // TODO: Not yet tested for legacy code.
+    if ( ! [_storage containsObject:anObject] ) {
+        [_storage addObject:anObject];
+    }
 }
 
 - (id)pop {
@@ -69,7 +74,7 @@
 }
 
 - (id )peek {
-    // Says if there something left to pop in the stack and returns it
+    // Says if there is something left to pop in the stack and returns it
     id result = ([_storage isEmpty]) ? nil : [_storage lastObject];
     return result;
 }
@@ -112,7 +117,9 @@
 }
 
 - (void)writeToURL:(NSURL *)anURL {
-    [_storage writeToURL:anURL atomically:YES];
+    if ( ! [_storage writeToURL:anURL atomically:YES] ) {
+        [[PSLogger sharedLogger] debugFormat:@"Couldn't persist stack into url: %@", anURL];
+    }
 }
 
 @end

@@ -242,6 +242,67 @@ static NSUInteger TAIL_LENGTH = 20;
     return result;
 }
 
+- (NSString *)naveKeyForLinkDestination {
+    
+    NSString *strongKey;
+    NSArray *components = [self componentsSeparatedByString:@" "];
+    
+    if (components.count >= 2) {
+        strongKey = components[1];
+    }
+    
+    return strongKey;
+}
+
+- (NSString *)strongKeyForLinkDestination {
+    
+    NSMutableString *strongKey = [@"" mutableCopy];
+    NSArray *components = [self componentsSeparatedByString:@" "];
+    NSString *testament = @"";
+    NSString *number = @"";
+    NSString *prefix = nil;
+    NSString *suffix = [number lastChar];
+    
+    if (components.count >= 4) {
+        testament = components[1];
+        number = components[3];
+    }
+    
+    // Find the H or G prefix
+    if ( [@"Hebrew" isEqualToString:testament] || [@"Greek" isEqualToString:testament] ) {
+        prefix = [testament firstChar];
+    }
+    
+    // Test if the last char is A or B extension and truncate number as needed
+    if ( [@"A" isEqualToString:suffix] || [@"B" isEqualToString:suffix] ) {
+        NSUInteger len = [number length];
+        if ( len > 1 && len <= 5 ) {
+            // Truncate the last char in number
+            number = [number substringWithRange:NSMakeRange(0, len-1) ];
+            
+        } else {
+            number = nil;
+        }
+    } else {
+        suffix = @"";
+    }
+    
+    // Combine all the parts to get the Strong Key
+    if ( number && prefix ) {
+        
+        NSUInteger len = [number length];
+        strongKey = [[NSMutableString alloc] initWithString:prefix];
+        // Pad enough zero's at the beginning to make 4 chars
+        for ( int i = 0; i < (4 - len); i++ ) {
+            [strongKey appendString:@"0"];
+        }
+        [strongKey appendFormat:@"%@%@", number, suffix];
+        
+    }
+    
+    
+    return strongKey;
+}
 
 #pragma mark - NSAttributedString Compatibility
 
@@ -281,6 +342,10 @@ static NSUInteger TAIL_LENGTH = 20;
 
 - (NSRange )fullRange {
     return NSMakeRange( 0, [self length] );
+}
+
+- (BOOL)isEmpty {
+    return [self length] == 0;
 }
 
 - (NSAttributedString *)_attributedSubstringFromRange:(NSRange )range {
@@ -361,7 +426,7 @@ static NSUInteger TAIL_LENGTH = 20;
                      range:[self fullRange]];
         
     }
-
+    
     @end
 #endif
 

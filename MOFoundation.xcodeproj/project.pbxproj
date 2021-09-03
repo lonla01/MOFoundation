@@ -7,8 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0132A026E29B7B006D10B1 /* iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E01329E26E29B7B006D10B1 /* iOS-Info.plist */; };
+		4E0132A126E29B7B006D10B1 /* iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E01329E26E29B7B006D10B1 /* iOS-Info.plist */; };
+		4E0132A226E29B7B006D10B1 /* iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E01329E26E29B7B006D10B1 /* iOS-Info.plist */; };
+		4E0132A326E29B7B006D10B1 /* maccatalyst-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E01329F26E29B7B006D10B1 /* maccatalyst-Info.plist */; };
+		4E0132A426E29B7B006D10B1 /* maccatalyst-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E01329F26E29B7B006D10B1 /* maccatalyst-Info.plist */; };
+		4E0132A526E29B7B006D10B1 /* maccatalyst-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E01329F26E29B7B006D10B1 /* maccatalyst-Info.plist */; };
+		4E02CF0026B5476F0081CFAA /* MOFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AF29202DB0D600513067 /* MOFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0126B5476F0081CFAA /* NSString_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED0202DAF3100513067 /* NSString_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0226B5476F0081CFAA /* NSArray_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE3202DAF3300513067 /* NSArray_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0326B5476F0081CFAA /* NSNumber_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AECE202DAF3100513067 /* NSNumber_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0426B5476F0081CFAA /* PSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEDF202DAF3200513067 /* PSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0526B5476F0081CFAA /* PSVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEED202DAF3400513067 /* PSVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0626B5476F0081CFAA /* MOFoundation.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEB5202DAEF100513067 /* MOFoundation.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0726B5476F0081CFAA /* NSObject_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEEE202DAF3400513067 /* NSObject_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0826B5476F0081CFAA /* PSTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEF1202DAF3400513067 /* PSTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0926B5476F0081CFAA /* PSStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE9202DAF3300513067 /* PSStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0A26B5476F0081CFAA /* NSURL+LSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED8202DAF3100513067 /* NSURL+LSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0B26B5476F0081CFAA /* NSError_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AECF202DAF3100513067 /* NSError_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0C26B5476F0081CFAA /* PSStringToNumberTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE1202DAF3200513067 /* PSStringToNumberTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0D26B5476F0081CFAA /* NSDateFormatter+LSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AECD202DAF3100513067 /* NSDateFormatter+LSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0E26B5476F0081CFAA /* PSRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED9202DAF3200513067 /* PSRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF0F26B5476F0081CFAA /* PSAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEEA202DAF3300513067 /* PSAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF1026B5476F0081CFAA /* NSDate+PSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED1202DAF3100513067 /* NSDate+PSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF1126B5476F0081CFAA /* LSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEDE202DAF3200513067 /* LSUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF1226B5476F0081CFAA /* NSData+PSCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE4202DAF3300513067 /* NSData+PSCompression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF1326B5476F0081CFAA /* NSManagedObjectContext+Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEEF202DAF3400513067 /* NSManagedObjectContext+Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF1426B5476F0081CFAA /* PSRomanNumberDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEDA202DAF3200513067 /* PSRomanNumberDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF1626B5476F0081CFAA /* PSTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF5202DAF3500513067 /* PSTokenizer.m */; };
+		4E02CF1726B5476F0081CFAA /* NSDateFormatter+LSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF2202DAF3500513067 /* NSDateFormatter+LSExtensions.m */; };
+		4E02CF1826B5476F0081CFAA /* PSAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE0202DAF3200513067 /* PSAssert.m */; };
+		4E02CF1926B5476F0081CFAA /* PSStringToNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEEC202DAF3400513067 /* PSStringToNumberTransformer.m */; };
+		4E02CF1A26B5476F0081CFAA /* PSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE5202DAF3300513067 /* PSStack.m */; };
+		4E02CF1B26B5476F0081CFAA /* NSArray_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED4202DAF3100513067 /* NSArray_Conveniences.m */; };
+		4E02CF1C26B5476F0081CFAA /* NSString_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF4202DAF3500513067 /* NSString_Conveniences.m */; };
+		4E02CF1D26B5476F0081CFAA /* PSRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF0202DAF3400513067 /* PSRange.m */; };
+		4E02CF1E26B5476F0081CFAA /* NSDate+PSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AECC202DAF3100513067 /* NSDate+PSExtensions.m */; };
+		4E02CF1F26B5476F0081CFAA /* NSError_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE2202DAF3200513067 /* NSError_Conveniences.m */; };
+		4E02CF2026B5476F0081CFAA /* LSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED6202DAF3100513067 /* LSUtil.m */; };
+		4E02CF2126B5476F0081CFAA /* PSVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED7202DAF3100513067 /* PSVisitor.m */; };
+		4E02CF2226B5476F0081CFAA /* NSData+PSCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED3202DAF3100513067 /* NSData+PSCompression.m */; };
+		4E02CF2326B5476F0081CFAA /* PSRomanNumberDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE8202DAF3300513067 /* PSRomanNumberDetector.m */; };
+		4E02CF2426B5476F0081CFAA /* NSNumber_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEDD202DAF3200513067 /* NSNumber_Conveniences.m */; };
+		4E02CF2526B5476F0081CFAA /* NSManagedObjectContext+Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE7202DAF3300513067 /* NSManagedObjectContext+Conveniences.m */; };
+		4E02CF2626B5476F0081CFAA /* NSObject_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEEB202DAF3400513067 /* NSObject_Conveniences.m */; };
+		4E02CF2726B5476F0081CFAA /* NSURL+LSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED5202DAF3100513067 /* NSURL+LSExtensions.m */; };
+		4E02CF2826B5476F0081CFAA /* PSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF3202DAF3500513067 /* PSLogger.m */; };
+		4E02CF2A26B5476F0081CFAA /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF54202DE41900513067 /* libbz2.1.0.tbd */; };
+		4E02CF2B26B5476F0081CFAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF2A202DB45F00513067 /* CoreGraphics.framework */; };
+		4E02CF2C26B5476F0081CFAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF27202DAFF100513067 /* Foundation.framework */; };
+		4E02CF2D26B5476F0081CFAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF25202DAFD000513067 /* QuartzCore.framework */; };
+		4E02CF2E26B5476F0081CFAA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF21202DAFBB00513067 /* CoreText.framework */; };
+		4E02CF5426B55BF70081CFAA /* MOFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AF29202DB0D600513067 /* MOFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5526B55BF70081CFAA /* NSString_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED0202DAF3100513067 /* NSString_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5626B55BF70081CFAA /* NSArray_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE3202DAF3300513067 /* NSArray_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5726B55BF70081CFAA /* NSNumber_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AECE202DAF3100513067 /* NSNumber_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5826B55BF70081CFAA /* PSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEDF202DAF3200513067 /* PSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5926B55BF70081CFAA /* PSVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEED202DAF3400513067 /* PSVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5A26B55BF70081CFAA /* MOFoundation.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEB5202DAEF100513067 /* MOFoundation.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5B26B55BF70081CFAA /* NSObject_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEEE202DAF3400513067 /* NSObject_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5C26B55BF70081CFAA /* PSTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEF1202DAF3400513067 /* PSTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5D26B55BF70081CFAA /* PSStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE9202DAF3300513067 /* PSStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5E26B55BF70081CFAA /* NSURL+LSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED8202DAF3100513067 /* NSURL+LSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF5F26B55BF70081CFAA /* NSError_Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AECF202DAF3100513067 /* NSError_Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6026B55BF70081CFAA /* PSStringToNumberTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE1202DAF3200513067 /* PSStringToNumberTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6126B55BF70081CFAA /* NSDateFormatter+LSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AECD202DAF3100513067 /* NSDateFormatter+LSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6226B55BF70081CFAA /* PSRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED9202DAF3200513067 /* PSRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6326B55BF70081CFAA /* PSAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEEA202DAF3300513067 /* PSAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6426B55BF70081CFAA /* NSDate+PSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AED1202DAF3100513067 /* NSDate+PSExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6526B55BF70081CFAA /* LSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEDE202DAF3200513067 /* LSUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6626B55BF70081CFAA /* NSData+PSCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEE4202DAF3300513067 /* NSData+PSCompression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6726B55BF70081CFAA /* NSManagedObjectContext+Conveniences.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEEF202DAF3400513067 /* NSManagedObjectContext+Conveniences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6826B55BF70081CFAA /* PSRomanNumberDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEDA202DAF3200513067 /* PSRomanNumberDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E02CF6A26B55BF70081CFAA /* PSTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF5202DAF3500513067 /* PSTokenizer.m */; };
+		4E02CF6B26B55BF70081CFAA /* NSDateFormatter+LSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF2202DAF3500513067 /* NSDateFormatter+LSExtensions.m */; };
+		4E02CF6C26B55BF70081CFAA /* PSAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE0202DAF3200513067 /* PSAssert.m */; };
+		4E02CF6D26B55BF70081CFAA /* PSStringToNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEEC202DAF3400513067 /* PSStringToNumberTransformer.m */; };
+		4E02CF6E26B55BF70081CFAA /* PSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE5202DAF3300513067 /* PSStack.m */; };
+		4E02CF6F26B55BF70081CFAA /* NSArray_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED4202DAF3100513067 /* NSArray_Conveniences.m */; };
+		4E02CF7026B55BF70081CFAA /* NSString_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF4202DAF3500513067 /* NSString_Conveniences.m */; };
+		4E02CF7126B55BF70081CFAA /* PSRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF0202DAF3400513067 /* PSRange.m */; };
+		4E02CF7226B55BF70081CFAA /* NSDate+PSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AECC202DAF3100513067 /* NSDate+PSExtensions.m */; };
+		4E02CF7326B55BF70081CFAA /* NSError_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE2202DAF3200513067 /* NSError_Conveniences.m */; };
+		4E02CF7426B55BF70081CFAA /* LSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED6202DAF3100513067 /* LSUtil.m */; };
+		4E02CF7526B55BF70081CFAA /* PSVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED7202DAF3100513067 /* PSVisitor.m */; };
+		4E02CF7626B55BF70081CFAA /* NSData+PSCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED3202DAF3100513067 /* NSData+PSCompression.m */; };
+		4E02CF7726B55BF70081CFAA /* PSRomanNumberDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE8202DAF3300513067 /* PSRomanNumberDetector.m */; };
+		4E02CF7826B55BF70081CFAA /* NSNumber_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEDD202DAF3200513067 /* NSNumber_Conveniences.m */; };
+		4E02CF7926B55BF70081CFAA /* NSManagedObjectContext+Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEE7202DAF3300513067 /* NSManagedObjectContext+Conveniences.m */; };
+		4E02CF7A26B55BF70081CFAA /* NSObject_Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEEB202DAF3400513067 /* NSObject_Conveniences.m */; };
+		4E02CF7B26B55BF70081CFAA /* NSURL+LSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AED5202DAF3100513067 /* NSURL+LSExtensions.m */; };
+		4E02CF7C26B55BF70081CFAA /* PSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEF3202DAF3500513067 /* PSLogger.m */; };
+		4E02CF7E26B55BF70081CFAA /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF54202DE41900513067 /* libbz2.1.0.tbd */; };
+		4E02CF7F26B55BF70081CFAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF2A202DB45F00513067 /* CoreGraphics.framework */; };
+		4E02CF8026B55BF70081CFAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF27202DAFF100513067 /* Foundation.framework */; };
+		4E02CF8126B55BF70081CFAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF25202DAFD000513067 /* QuartzCore.framework */; };
+		4E02CF8226B55BF70081CFAA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AF21202DAFBB00513067 /* CoreText.framework */; };
 		4E3DA4A322C8DBEA00F4ABBE /* PSFontCreationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DA4A222C8DBEA00F4ABBE /* PSFontCreationTestCase.m */; };
-		4E47AEBC202DAEF100513067 /* MOFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AEB2202DAEF100513067 /* MOFoundation.framework */; };
+		4E47AEBC202DAEF100513067 /* MOFoundation_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E47AEB2202DAEF100513067 /* MOFoundation_macOS.framework */; };
 		4E47AEC1202DAEF100513067 /* MOFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AEC0202DAEF100513067 /* MOFoundationTests.m */; };
 		4E47AEC3202DAEF100513067 /* MOFoundation.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4E47AEB5202DAEF100513067 /* MOFoundation.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E47AEF6202DAF3500513067 /* NSDate+PSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47AECC202DAF3100513067 /* NSDate+PSExtensions.m */; };
@@ -68,8 +164,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E01329E26E29B7B006D10B1 /* iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		4E01329F26E29B7B006D10B1 /* maccatalyst-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "maccatalyst-Info.plist"; sourceTree = "<group>"; };
+		4E02CF3326B5476F0081CFAA /* MOFoundation-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "MOFoundation-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E02CF8726B55BF70081CFAA /* MOFoundation-maccatalyst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "MOFoundation-maccatalyst.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3DA4A222C8DBEA00F4ABBE /* PSFontCreationTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSFontCreationTestCase.m; sourceTree = "<group>"; };
-		4E47AEB2202DAEF100513067 /* MOFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E47AEB2202DAEF100513067 /* MOFoundation_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOFoundation_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E47AEB5202DAEF100513067 /* MOFoundation.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOFoundation.pch; sourceTree = "<group>"; };
 		4E47AEB6202DAEF100513067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E47AEBB202DAEF100513067 /* MOFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +214,6 @@
 		4E47AEF4202DAF3500513067 /* NSString_Conveniences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_Conveniences.m; sourceTree = "<group>"; };
 		4E47AEF5202DAF3500513067 /* PSTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTokenizer.m; sourceTree = "<group>"; };
 		4E47AF21202DAFBB00513067 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		4E47AF23202DAFC700513067 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4E47AF25202DAFD000513067 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4E47AF27202DAFF100513067 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4E47AF29202DB0D600513067 /* MOFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOFoundation.h; sourceTree = "<group>"; };
@@ -127,6 +226,30 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E02CF2926B5476F0081CFAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E02CF2A26B5476F0081CFAA /* libbz2.1.0.tbd in Frameworks */,
+				4E02CF2B26B5476F0081CFAA /* CoreGraphics.framework in Frameworks */,
+				4E02CF2C26B5476F0081CFAA /* Foundation.framework in Frameworks */,
+				4E02CF2D26B5476F0081CFAA /* QuartzCore.framework in Frameworks */,
+				4E02CF2E26B5476F0081CFAA /* CoreText.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E02CF7D26B55BF70081CFAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E02CF7E26B55BF70081CFAA /* libbz2.1.0.tbd in Frameworks */,
+				4E02CF7F26B55BF70081CFAA /* CoreGraphics.framework in Frameworks */,
+				4E02CF8026B55BF70081CFAA /* Foundation.framework in Frameworks */,
+				4E02CF8126B55BF70081CFAA /* QuartzCore.framework in Frameworks */,
+				4E02CF8226B55BF70081CFAA /* CoreText.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E47AEAE202DAEF100513067 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,7 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E47AEBC202DAEF100513067 /* MOFoundation.framework in Frameworks */,
+				4E47AEBC202DAEF100513067 /* MOFoundation_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +289,10 @@
 		4E47AEB3202DAEF100513067 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E47AEB2202DAEF100513067 /* MOFoundation.framework */,
+				4E47AEB2202DAEF100513067 /* MOFoundation_macOS.framework */,
 				4E47AEBB202DAEF100513067 /* MOFoundationTests.xctest */,
+				4E02CF3326B5476F0081CFAA /* MOFoundation-iOS.framework */,
+				4E02CF8726B55BF70081CFAA /* MOFoundation-maccatalyst.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +300,8 @@
 		4E47AEB4202DAEF100513067 /* MOFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				4E01329E26E29B7B006D10B1 /* iOS-Info.plist */,
+				4E01329F26E29B7B006D10B1 /* maccatalyst-Info.plist */,
 				4E47AEB6202DAEF100513067 /* Info.plist */,
 				4E47AEDE202DAF3200513067 /* LSUtil.h */,
 				4E47AED6202DAF3100513067 /* LSUtil.m */,
@@ -238,7 +365,6 @@
 				4E47AF2A202DB45F00513067 /* CoreGraphics.framework */,
 				4E47AF27202DAFF100513067 /* Foundation.framework */,
 				4E47AF25202DAFD000513067 /* QuartzCore.framework */,
-				4E47AF23202DAFC700513067 /* UIKit.framework */,
 				4E47AF21202DAFBB00513067 /* CoreText.framework */,
 			);
 			name = Frameworks;
@@ -247,6 +373,62 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4E02CEFF26B5476F0081CFAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E02CF0026B5476F0081CFAA /* MOFoundation.h in Headers */,
+				4E02CF0126B5476F0081CFAA /* NSString_Conveniences.h in Headers */,
+				4E02CF0226B5476F0081CFAA /* NSArray_Conveniences.h in Headers */,
+				4E02CF0326B5476F0081CFAA /* NSNumber_Conveniences.h in Headers */,
+				4E02CF0426B5476F0081CFAA /* PSLogger.h in Headers */,
+				4E02CF0526B5476F0081CFAA /* PSVisitor.h in Headers */,
+				4E02CF0626B5476F0081CFAA /* MOFoundation.pch in Headers */,
+				4E02CF0726B5476F0081CFAA /* NSObject_Conveniences.h in Headers */,
+				4E02CF0826B5476F0081CFAA /* PSTokenizer.h in Headers */,
+				4E02CF0926B5476F0081CFAA /* PSStack.h in Headers */,
+				4E02CF0A26B5476F0081CFAA /* NSURL+LSExtensions.h in Headers */,
+				4E02CF0B26B5476F0081CFAA /* NSError_Conveniences.h in Headers */,
+				4E02CF0C26B5476F0081CFAA /* PSStringToNumberTransformer.h in Headers */,
+				4E02CF0D26B5476F0081CFAA /* NSDateFormatter+LSExtensions.h in Headers */,
+				4E02CF0E26B5476F0081CFAA /* PSRange.h in Headers */,
+				4E02CF0F26B5476F0081CFAA /* PSAssert.h in Headers */,
+				4E02CF1026B5476F0081CFAA /* NSDate+PSExtensions.h in Headers */,
+				4E02CF1126B5476F0081CFAA /* LSUtil.h in Headers */,
+				4E02CF1226B5476F0081CFAA /* NSData+PSCompression.h in Headers */,
+				4E02CF1326B5476F0081CFAA /* NSManagedObjectContext+Conveniences.h in Headers */,
+				4E02CF1426B5476F0081CFAA /* PSRomanNumberDetector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E02CF5326B55BF70081CFAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E02CF5426B55BF70081CFAA /* MOFoundation.h in Headers */,
+				4E02CF5526B55BF70081CFAA /* NSString_Conveniences.h in Headers */,
+				4E02CF5626B55BF70081CFAA /* NSArray_Conveniences.h in Headers */,
+				4E02CF5726B55BF70081CFAA /* NSNumber_Conveniences.h in Headers */,
+				4E02CF5826B55BF70081CFAA /* PSLogger.h in Headers */,
+				4E02CF5926B55BF70081CFAA /* PSVisitor.h in Headers */,
+				4E02CF5A26B55BF70081CFAA /* MOFoundation.pch in Headers */,
+				4E02CF5B26B55BF70081CFAA /* NSObject_Conveniences.h in Headers */,
+				4E02CF5C26B55BF70081CFAA /* PSTokenizer.h in Headers */,
+				4E02CF5D26B55BF70081CFAA /* PSStack.h in Headers */,
+				4E02CF5E26B55BF70081CFAA /* NSURL+LSExtensions.h in Headers */,
+				4E02CF5F26B55BF70081CFAA /* NSError_Conveniences.h in Headers */,
+				4E02CF6026B55BF70081CFAA /* PSStringToNumberTransformer.h in Headers */,
+				4E02CF6126B55BF70081CFAA /* NSDateFormatter+LSExtensions.h in Headers */,
+				4E02CF6226B55BF70081CFAA /* PSRange.h in Headers */,
+				4E02CF6326B55BF70081CFAA /* PSAssert.h in Headers */,
+				4E02CF6426B55BF70081CFAA /* NSDate+PSExtensions.h in Headers */,
+				4E02CF6526B55BF70081CFAA /* LSUtil.h in Headers */,
+				4E02CF6626B55BF70081CFAA /* NSData+PSCompression.h in Headers */,
+				4E02CF6726B55BF70081CFAA /* NSManagedObjectContext+Conveniences.h in Headers */,
+				4E02CF6826B55BF70081CFAA /* PSRomanNumberDetector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E47AEAF202DAEF100513067 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,9 +460,45 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4E47AEB1202DAEF100513067 /* MOFoundation */ = {
+		4E02CEFE26B5476F0081CFAA /* MOFoundation-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E47AEC6202DAEF100513067 /* Build configuration list for PBXNativeTarget "MOFoundation" */;
+			buildConfigurationList = 4E02CF3026B5476F0081CFAA /* Build configuration list for PBXNativeTarget "MOFoundation-iOS" */;
+			buildPhases = (
+				4E02CEFF26B5476F0081CFAA /* Headers */,
+				4E02CF1526B5476F0081CFAA /* Sources */,
+				4E02CF2926B5476F0081CFAA /* Frameworks */,
+				4E02CF2F26B5476F0081CFAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MOFoundation-iOS";
+			productName = MOFoundation;
+			productReference = 4E02CF3326B5476F0081CFAA /* MOFoundation-iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E02CF5226B55BF70081CFAA /* MOFoundation-maccatalyst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E02CF8426B55BF70081CFAA /* Build configuration list for PBXNativeTarget "MOFoundation-maccatalyst" */;
+			buildPhases = (
+				4E02CF5326B55BF70081CFAA /* Headers */,
+				4E02CF6926B55BF70081CFAA /* Sources */,
+				4E02CF7D26B55BF70081CFAA /* Frameworks */,
+				4E02CF8326B55BF70081CFAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MOFoundation-maccatalyst";
+			productName = MOFoundation;
+			productReference = 4E02CF8726B55BF70081CFAA /* MOFoundation-maccatalyst.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E47AEB1202DAEF100513067 /* MOFoundation-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E47AEC6202DAEF100513067 /* Build configuration list for PBXNativeTarget "MOFoundation-macOS" */;
 			buildPhases = (
 				4E47AEAF202DAEF100513067 /* Headers */,
 				4E47AEAD202DAEF100513067 /* Sources */,
@@ -291,9 +509,9 @@
 			);
 			dependencies = (
 			);
-			name = MOFoundation;
+			name = "MOFoundation-macOS";
 			productName = MOFoundation;
-			productReference = 4E47AEB2202DAEF100513067 /* MOFoundation.framework */;
+			productReference = 4E47AEB2202DAEF100513067 /* MOFoundation_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4E47AEBA202DAEF100513067 /* MOFoundationTests */ = {
@@ -320,12 +538,18 @@
 		4E47AEA9202DAEF100513067 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Patrice;
 				TargetAttributes = {
+					4E02CEFE26B5476F0081CFAA = {
+						ProvisioningStyle = Automatic;
+					};
+					4E02CF5226B55BF70081CFAA = {
+						ProvisioningStyle = Automatic;
+					};
 					4E47AEB1202DAEF100513067 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					4E47AEBA202DAEF100513067 = {
 						CreatedOnToolsVersion = 9.2;
@@ -339,23 +563,46 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4E47AEA8202DAEF100513067;
 			productRefGroup = 4E47AEB3202DAEF100513067 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E47AEB1202DAEF100513067 /* MOFoundation */,
+				4E02CEFE26B5476F0081CFAA /* MOFoundation-iOS */,
+				4E47AEB1202DAEF100513067 /* MOFoundation-macOS */,
+				4E02CF5226B55BF70081CFAA /* MOFoundation-maccatalyst */,
 				4E47AEBA202DAEF100513067 /* MOFoundationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E02CF2F26B5476F0081CFAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0132A026E29B7B006D10B1 /* iOS-Info.plist in Resources */,
+				4E0132A326E29B7B006D10B1 /* maccatalyst-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E02CF8326B55BF70081CFAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0132A226E29B7B006D10B1 /* iOS-Info.plist in Resources */,
+				4E0132A526E29B7B006D10B1 /* maccatalyst-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E47AEB0202DAEF100513067 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0132A126E29B7B006D10B1 /* iOS-Info.plist in Resources */,
+				4E0132A426E29B7B006D10B1 /* maccatalyst-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +616,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E02CF1526B5476F0081CFAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E02CF1626B5476F0081CFAA /* PSTokenizer.m in Sources */,
+				4E02CF1726B5476F0081CFAA /* NSDateFormatter+LSExtensions.m in Sources */,
+				4E02CF1826B5476F0081CFAA /* PSAssert.m in Sources */,
+				4E02CF1926B5476F0081CFAA /* PSStringToNumberTransformer.m in Sources */,
+				4E02CF1A26B5476F0081CFAA /* PSStack.m in Sources */,
+				4E02CF1B26B5476F0081CFAA /* NSArray_Conveniences.m in Sources */,
+				4E02CF1C26B5476F0081CFAA /* NSString_Conveniences.m in Sources */,
+				4E02CF1D26B5476F0081CFAA /* PSRange.m in Sources */,
+				4E02CF1E26B5476F0081CFAA /* NSDate+PSExtensions.m in Sources */,
+				4E02CF1F26B5476F0081CFAA /* NSError_Conveniences.m in Sources */,
+				4E02CF2026B5476F0081CFAA /* LSUtil.m in Sources */,
+				4E02CF2126B5476F0081CFAA /* PSVisitor.m in Sources */,
+				4E02CF2226B5476F0081CFAA /* NSData+PSCompression.m in Sources */,
+				4E02CF2326B5476F0081CFAA /* PSRomanNumberDetector.m in Sources */,
+				4E02CF2426B5476F0081CFAA /* NSNumber_Conveniences.m in Sources */,
+				4E02CF2526B5476F0081CFAA /* NSManagedObjectContext+Conveniences.m in Sources */,
+				4E02CF2626B5476F0081CFAA /* NSObject_Conveniences.m in Sources */,
+				4E02CF2726B5476F0081CFAA /* NSURL+LSExtensions.m in Sources */,
+				4E02CF2826B5476F0081CFAA /* PSLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E02CF6926B55BF70081CFAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E02CF6A26B55BF70081CFAA /* PSTokenizer.m in Sources */,
+				4E02CF6B26B55BF70081CFAA /* NSDateFormatter+LSExtensions.m in Sources */,
+				4E02CF6C26B55BF70081CFAA /* PSAssert.m in Sources */,
+				4E02CF6D26B55BF70081CFAA /* PSStringToNumberTransformer.m in Sources */,
+				4E02CF6E26B55BF70081CFAA /* PSStack.m in Sources */,
+				4E02CF6F26B55BF70081CFAA /* NSArray_Conveniences.m in Sources */,
+				4E02CF7026B55BF70081CFAA /* NSString_Conveniences.m in Sources */,
+				4E02CF7126B55BF70081CFAA /* PSRange.m in Sources */,
+				4E02CF7226B55BF70081CFAA /* NSDate+PSExtensions.m in Sources */,
+				4E02CF7326B55BF70081CFAA /* NSError_Conveniences.m in Sources */,
+				4E02CF7426B55BF70081CFAA /* LSUtil.m in Sources */,
+				4E02CF7526B55BF70081CFAA /* PSVisitor.m in Sources */,
+				4E02CF7626B55BF70081CFAA /* NSData+PSCompression.m in Sources */,
+				4E02CF7726B55BF70081CFAA /* PSRomanNumberDetector.m in Sources */,
+				4E02CF7826B55BF70081CFAA /* NSNumber_Conveniences.m in Sources */,
+				4E02CF7926B55BF70081CFAA /* NSManagedObjectContext+Conveniences.m in Sources */,
+				4E02CF7A26B55BF70081CFAA /* NSObject_Conveniences.m in Sources */,
+				4E02CF7B26B55BF70081CFAA /* NSURL+LSExtensions.m in Sources */,
+				4E02CF7C26B55BF70081CFAA /* PSLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E47AEAD202DAEF100513067 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,17 +708,159 @@
 /* Begin PBXTargetDependency section */
 		4E47AEBE202DAEF100513067 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4E47AEB1202DAEF100513067 /* MOFoundation */;
+			target = 4E47AEB1202DAEF100513067 /* MOFoundation-macOS */;
 			targetProxy = 4E47AEBD202DAEF100513067 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4E02CF3126B5476F0081CFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6AEUA6YWY2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/MOFoundation/**",
+				);
+				INFOPLIST_FILE = "MOFoundation/iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = MOFoundation.modulemap;
+				OTHER_LDFLAGS = "-v";
+				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		4E02CF3226B5476F0081CFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6AEUA6YWY2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/MOFoundation/**",
+				);
+				INFOPLIST_FILE = "MOFoundation/iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = MOFoundation.modulemap;
+				OTHER_LDFLAGS = "-v";
+				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		4E02CF8526B55BF70081CFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6AEUA6YWY2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/MOFoundation/**",
+				);
+				INFOPLIST_FILE = "MOFoundation/maccatalyst-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = MOFoundation.modulemap;
+				OTHER_LDFLAGS = "-v";
+				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = maccatalyst;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		4E02CF8626B55BF70081CFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6AEUA6YWY2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/MOFoundation/**",
+				);
+				INFOPLIST_FILE = "MOFoundation/maccatalyst-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = MOFoundation.modulemap;
+				OTHER_LDFLAGS = "-v";
+				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = maccatalyst;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
 		4E47AEC4202DAEF100513067 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -442,6 +883,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -456,6 +898,7 @@
 				DEVELOPMENT_TEAM = 6AEUA6YWY2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -470,11 +913,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTED_PLATFORMS = macosx;
 				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -484,8 +928,9 @@
 		4E47AEC5202DAEF100513067 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -508,6 +953,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -530,10 +976,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTED_PLATFORMS = macosx;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -544,10 +991,11 @@
 		4E47AEC7202DAEF100513067 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "";
+				ARCHS = x86_64;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6AEUA6YWY2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -566,8 +1014,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USE_HEADERMAP = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
@@ -577,10 +1025,11 @@
 		4E47AEC8202DAEF100513067 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "";
+				ARCHS = x86_64;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6AEUA6YWY2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -599,8 +1048,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mobilisse.MOFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USE_HEADERMAP = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
@@ -644,6 +1093,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E02CF3026B5476F0081CFAA /* Build configuration list for PBXNativeTarget "MOFoundation-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E02CF3126B5476F0081CFAA /* Debug */,
+				4E02CF3226B5476F0081CFAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E02CF8426B55BF70081CFAA /* Build configuration list for PBXNativeTarget "MOFoundation-maccatalyst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E02CF8526B55BF70081CFAA /* Debug */,
+				4E02CF8626B55BF70081CFAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4E47AEAC202DAEF100513067 /* Build configuration list for PBXProject "MOFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -653,7 +1120,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E47AEC6202DAEF100513067 /* Build configuration list for PBXNativeTarget "MOFoundation" */ = {
+		4E47AEC6202DAEF100513067 /* Build configuration list for PBXNativeTarget "MOFoundation-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E47AEC7202DAEF100513067 /* Debug */,

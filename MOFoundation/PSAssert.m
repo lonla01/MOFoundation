@@ -33,9 +33,9 @@ static PSAssert *_Asserter = nil;
 
 - (void)assertTrue:(BOOL)condition msg:(NSString *)msg {
     if (condition != YES) {
-//        NSString *reason = (msg == nil) ? PSAssertionGenericReason : msg;
-//        [self debug:msg];
-//        @throw [NSException exceptionWithName:PSAssertionException reason:reason userInfo:nil];
+        NSString *reason = (msg == nil) ? PSAssertionGenericReason : msg;
+        [self debug:msg];
+        @throw [NSException exceptionWithName:PSAssertionException reason:reason userInfo:nil];
     }
 }
 
@@ -115,17 +115,17 @@ static PSAssert *_Asserter = nil;
 }
 
 
-- (void)errorFormat:(NSString *)format, ... {
-    
-    va_list argumentsList;
-    
-    if ( format ) {
-        va_start( argumentsList, format );
-        [[PSLogger sharedLogger] errorFormat:format args:argumentsList sender:self];
-        va_end( argumentsList );
-    }
-    
-}
+//- (void)errorFormat:(NSString *)format, ... {
+//    
+//    va_list argumentsList;
+//    
+//    if ( format ) {
+//        va_start( argumentsList, format );
+//        [[PSLogger sharedLogger] errorFormat:format args:argumentsList sender:self];
+//        va_end( argumentsList );
+//    }
+//    
+//}
 
 - (void)assertVal:(NSUInteger )obtainedVal isEq:(NSUInteger )correctVal msg:(NSString *)msg {
     [[self asserter] assertTrue:( correctVal == obtainedVal ) msg:[NSString stringWithFormat:@"%@: %ld != %ld", msg, (long)correctVal, (long)obtainedVal]];
@@ -140,6 +140,7 @@ static PSAssert *_Asserter = nil;
         NSString *sign = [object isEqual:model] ? @"=" : @"!=";
         [self trace:[NSString stringWithFormat:@"%@: [%@] %@ [%@]", msg, model, sign, object]];
     }
+     [self debug:@"...OK\n"];
 }
 
 - (void)assertArray:(NSArray *)obtained isEq:(NSArray *)model msg:(NSString *)msg {

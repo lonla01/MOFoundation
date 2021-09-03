@@ -6,6 +6,9 @@
 //  Copyright 2010 Softisse S.A.R.L.. All rights reserved.
 //
 
+@interface NSData ( Conveniences )
+- (id)objectRepresentationOfClass:(Class )aClass;
+@end
 
 @interface NSObject ( Conveniences ) 
 
@@ -22,6 +25,7 @@
 
 - (NSData *)dataFromObject:(id)properties;
 - (id)objectFromData:(NSData *)data;
+- (NSData *)dataRepresentation;
 
 - (NSUserDefaults *)prefs;
 
@@ -29,3 +33,5 @@
 - (BOOL)isEmptyCollection;
 
 @end
+
+

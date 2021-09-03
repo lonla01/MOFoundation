@@ -8,6 +8,23 @@
 #import "NSArray_Conveniences.h"
 #import "PSLogger.h"
 
+@implementation NSData ( Conveniences )
+
+- (id)objectRepresentationOfClass:(Class )aClass {
+    
+    NSError *error = nil;
+    
+    id unarchivedObject = [NSKeyedUnarchiver unarchivedObjectOfClass:aClass fromData:self error:&error];
+    
+    if (error) {
+        [self errorFormat:@"Error unarchiving object from data - [%@]", [error localizedDescription]];
+    }
+    
+    return unarchivedObject;
+}
+
+@end
+
 @implementation NSObject ( Conveniences )
 
 - (void )touch {}
@@ -64,12 +81,25 @@
     return concat;
 }
 
-- (NSData *)dataFromObject:(id)properties {
-    return [NSKeyedArchiver archivedDataWithRootObject:properties];
+- (NSData *)dataFromObject:(id)object {
+    return [object dataRepresentation];
 }
 
-- (id)objectFromData:(NSData *)data {
-    return [NSKeyedUnarchiver unarchiveObjectWithData:data];
+- (id)objectFromData:(NSData *)data ofClass:(Class )aClass {
+    return [data objectRepresentationOfClass:aClass];
+}
+
+- (NSData *)dataRepresentation {
+    
+    NSError *error = nil;
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self requiringSecureCoding:NO error:&error];
+    
+    if (error) {
+        [self errorFormat:@"Error archiving object of class:[%@] - [%@]", [self class], [error localizedDescription]];
+    }
+    
+    return data;
+    
 }
 
 - (NSUserDefaults *)prefs {
@@ -87,3 +117,5 @@
 }
 
 @end
+
+
